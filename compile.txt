@@ -1,0 +1,3 @@
+windres notepad.rc -o notepad.res
+gcc notepad.c notepad.res -o notepad.exe -mwindows -lcomdlg32 -lole32 -DUNICODE -D_UNICODE
+./notepad -ttle855
